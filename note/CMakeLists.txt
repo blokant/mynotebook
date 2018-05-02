@@ -1,1 +1,0 @@
-add_library(notelibrary note.cpp)

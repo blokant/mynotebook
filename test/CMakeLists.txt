@@ -1,0 +1,6 @@
+include_directories("../3rdparty/googletest-master/googletest/include")
+include_directories("../src/")
+enable_testing()
+add_executable(mynotebook_test main_test.cpp simple_test.cpp)
+add_dependencies(mynotebook_test gtest)
+target_link_libraries(mynotebook_test gtest gtest_main notelibrary)
